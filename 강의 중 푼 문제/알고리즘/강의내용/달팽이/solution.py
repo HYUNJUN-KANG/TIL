@@ -2,7 +2,7 @@
 T = int(input())
 for tc in range(1, T + 1):
     N = int(input())
-    arr = [[0] * N for _ in range(N)]
+    arr = [[0] * N for _ in range(N)]     # 비어있는 배열 만들기
 
     cnt = N * N
     # delta : 우 하 좌 상
@@ -12,7 +12,7 @@ for tc in range(1, T + 1):
 
     r = 0  # 가로좌표 0,0 부터 시작
     c = 0  # 세로좌표
-    d = 0  # 델타 인덱스
+    d = 0  # 델타 인덱스의 변수, 방향을 결정하는 변수
     num = 1  # 증가하는 숫자( 배열에 채울 숫자)
     while num <= cnt:  # 총 N*N개의 숫자를 채워야함
         # 벽 이거나, 채울 수 없으면 방향전환
@@ -28,3 +28,6 @@ for tc in range(1, T + 1):
 
     for row in arr:
         print(row)
+
+
+
