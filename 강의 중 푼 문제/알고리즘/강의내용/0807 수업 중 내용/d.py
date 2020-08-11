@@ -1,0 +1,1 @@
+print('안', end = " ") + print('녕')
