@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <link rel="stylesheet" href="02_flexbox.css">
+  <title>CSS Flexbox</title>
+  <style>
+    .flex-container {
+      display: flex;
+      
+      /* 묶어서 같이 떨어뜨림 */
+      flex-wrap: wrap;
+
+      flex-direction: row;
+      /* flex-direction: row-reverse; */
+      /* flex-direction: column;
+      flex-direction: column-reverse; */
+
+      /* flex-direction과 flex-wrap의 shorthand*/
+      /* flex-flow: column wrap; */
+
+
+      /* 메인축 정렬 */
+      justify-content: flex-start;
+      /* justify-content: flex-end;
+      justify-content: center; */
+
+      /* space-between은 내부가 외부의 2배 */
+      /* justify-content: space-between; */
+
+      /* space-evenly 내부 외부가 균등 정렬 */
+      /* justify-content: space-evenly; */
+
+
+      /* 크로스축 정렬 */
+      align-items: flex-start;
+      align-items: flex-end;
+      align-items: center;
+
+      /* 내부 글자들의 크기가 다를때 맞춰줌 */
+      align-items: baseline;
+    }
+
+      /* align-self를 통해 개별요소를 조정 */
+    .item1 {
+      align-self: flex-start;
+      order: 0;
+      /* 남은 여백을 나눠서 1만큼 분배하도록 함 */
+      flex-grow: 1;
+    }
+
+    .item2 {
+      align-self: center;
+      /* order는 숫자가 작을수록 앞으로 옴.(기본값 = 0) */
+      order: 2;
+      /* 남은 여백을 나눠서 2만큼 분배하도록 함 */
+      flex-grow: 1;
+    }
+
+    .item3 {
+      align-self: flex-end;
+      order: -1;
+      /* align-self: stretch; */
+    }
+
+  </style>
+</head>
+<body>
+  <div class="base">
+    <h2>Flex</h2>
+    <hr>
+    <div class="box flex-container">
+      <div class="item1">1</div>
+      <div class="item2">2</div>
+      <div class="item3">3</div>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="653c892c-9f16-4787-8593-167e5c08214a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../0811 수업/practice/practice/card.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../0811 수업/practice/practice/card.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0810/css/00_selector.html" beforeDir="false" afterPath="$PROJECT_DIR$/../0810/css/00_selector.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0810/css/01_cascading_order.html" beforeDir="false" afterPath="$PROJECT_DIR$/../0810/css/01_cascading_order.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0810/css/02_inheritance.html" beforeDir="false" afterPath="$PROJECT_DIR$/../0810/css/02_inheritance.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0810/css/03_rem_rem.html" beforeDir="false" afterPath="$PROJECT_DIR$/../0810/css/03_rem_rem.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0810/css/04_box_model.html" beforeDir="false" afterPath="$PROJECT_DIR$/../0810/css/04_box_model.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0810/css/05_box_sizing.html" beforeDir="false" afterPath="$PROJECT_DIR$/../0810/css/05_box_sizing.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0810/css/07_position.html" beforeDir="false" afterPath="$PROJECT_DIR$/../0810/css/07_position.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="1fyariPhp0Vc0hn27E2gVxnpNGK" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="653c892c-9f16-4787-8593-167e5c08214a" name="Default Changelist" comment="" />
+      <created>1597192987351</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1597192987351</updated>
+    </task>
+    <servers />
+  </component>
+</project>

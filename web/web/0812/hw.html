@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <title>Document</title>
+  <style>
+    .box {
+      background-color:red;
+      border: 1px transparent black;
+      color: white;
+      height: 70px;
+      width: 800px;
+      
+      
+     
+    
+    }
+    .box_text {
+      font-size: 30px;
+      padding-left: 15%;
+
+    }
+
+    .box2 {
+      width: 800px;
+      height: 130px;
+      background-color: white;
+      color: black;
+      display: block;
+      padding-top: 20px;
+      border-bottom: 2px solid lightgray;
+    }
+    .box2_text {
+      font-size: 50px;
+      text-align: start;
+      font-weight: bold;
+    }
+    .box3 {
+      width: 800px;
+      height: 70px;
+      background-color: white;
+      color: black;
+      border-bottom: 3px solid  blue;
+      display: inline-block;
+      padding-top: 10px;
+    }
+
+    .box3_text {
+      font-size: 30px;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .container-md2 {
+      border: 2px solid lightgray;
+      width: 800px;
+      height: 500px;
+    }
+
+    .box4 {
+      padding: 20px;
+    }
+
+    .box4_text {
+      color: black;
+      font-size: 30px;
+      font-weight: bold;
+      text-align: start;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .box5 {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+
+    .box5_text {
+      font-size: 20px;
+      color: black;
+      margin: 10px;
+      font-weight: normal;
+    }
+
+    .box5_text2 {
+      font-size: 20px;
+      color: blue;
+      
+      font-weight: normal;
+      margin-left: 40%;
+
+    }
+
+    .clearfix::after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+
+    .box6 {
+      
+      display: inline;
+      
+      text-align: center;
+      margin-left: 8%;
+      width: 500px;
+      font-size: 20px;
+      font-weight: bold;
+
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container-md">
+    <div class="box">
+      <div class="box_text">invalid Login or Password</div>
+    <div class="box2">
+      <div class="box2_text">SSAFY 전용 GitLab 시스템</div>
+    </div>
+    <div class="container-md2">
+      <div class="box3">
+        <div class="box3_text">Sign in</div>
+      </div>
+
+      <div class="box4">
+        <div class="box4_text">Username or email</div>
+        <div class="input-group input-group-lg">
+          <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+        </div>
+        <br>
+        <div class="box4_text">Password</div>
+        <div class="input-group input-group-lg">
+          <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+        </div>
+        <hr>
+          <div class="box5">
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <div class="input-group-text">
+                  <input type="checkbox"aria-label="Checkbox for following text input">
+                </div>
+              </div>
+            <div class="box5_text">Remember me</div>
+            <div class="box5_text2">Forget your password?</div>
+            <hr>
+          </div>
+      </div>
+      <div class="box6">
+        <button type="button" class="btn btn-success btn-xl box6">Sign in</button>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
