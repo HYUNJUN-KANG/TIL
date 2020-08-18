@@ -1,5 +1,6 @@
-import random
 from django.shortcuts import render
+import random
+from datetime import datetime
 
 
 # Create your views here.
@@ -21,3 +22,18 @@ def lotto(request):
         'pick': pick,
     }
     return render(request, 'lotto.html', context)
+
+
+def dtl(request):
+    my_sentence = 'Life is short, you need python'
+    menus = ['a', 'b', 'c']
+    datetimenow = datetime.now()
+    context = {
+        'my_sentence': my_sentence,
+        'menus': menus,
+        'datetimenow': datetimenow,
+    }
+    return render(request, 'dtl.html', context)
+
+def index(request):
+    return render(request, 'pages/index.html')

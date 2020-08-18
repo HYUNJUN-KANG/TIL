@@ -1,0 +1,32 @@
+<h1>DTL Example</h1>
+
+<h3>lorem ipsum</h3>
+{% lorem %}
+<hr>
+{% lorem 3 w %}
+<br>
+{% lorem 3 w random %}
+<br>
+{% lorem 2 p random %}
+
+<h3>글자 수 제한</h3>
+<p>{{my_sentence|truncatewords:3 }}</p>
+<p>{{my_sentence|truncatechars:3 }}</p>
+
+<h3>글자 관련 필터</h3>
+<p>length: {{ 'abcef'|length }}</p>
+<p>lower: {{ 'ABC'|lower }}</p>
+<p>title: {{ my_sentence|title }}</p>
+<p>capfirst: {{ 'abc def'|capfirst }}</p>
+
+<h3> Random </h3>
+<p>{{ menus|random }}</p>
+
+<h3>날짜 표현</h3>
+<p>{{ datetimenow }}</p>
+<p>{{ datetimenow|date:"SHORT_DATE_FORMAT" }}</p>
+<hr>
+<p>{{% now "JS F Y H:I" %}}</p>
+<p>{{% now "Y" as current_year %}}</p>
+<P>Copyright {{ current_year }}</P>
+<br> * 20 

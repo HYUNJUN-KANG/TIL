@@ -154,7 +154,7 @@ python manage.py startapp 앱이름(복수형)
 
 
 
-
+# @@@@@@@@@@@@MTV 패턴 (MVC 패턴) 중요@@@@@@@@@@@@@
 
 * Model: 장고에서는 Model - DB
 * View: 장고에서는 Template - 보여지는 HTML
@@ -183,6 +183,7 @@ render해서 response to user
 1. urls.py
 2. views.py
 3. templates (html 틀)
+4. models.py
 
 
 
@@ -239,7 +240,7 @@ context = {
     'key': value,
 }
 
-return render(request, 'index.html'), context)
+return render(request, 'index.html', context)
 ```
 
 ```python
@@ -366,6 +367,16 @@ def hello(request, name(저장되는 변수명)):
 
   
 
+  * forloop.counter0 (index가 0부터 시작)
+
+  ```html
+  {% for post in posts %}
+  	<p>{{ forloop.counter0 }}번 글 : {{ post }}</p>
+  {% endfor %}
+  ```
+
+  
+
 * for empty
 
   ```python
@@ -413,7 +424,7 @@ def hello(request, name(저장되는 변수명)):
 ```html
 #action: 보내려는 목표 # method: http method(get/ host)
 
-<form action="/ / " method="GET">    # action 안에 //!!!!!!
+<form action="/ / " method="GET">    # action 안에 //!!!!!!  # GET: 주소에 query string 형식으로 데이터를 전달하는 방식 (정보 조회할때 사용)
     
     # input 데이터를 입력 받게 적절히 코딩 하면 된다.
     
@@ -427,6 +438,16 @@ def hello(request, name(저장되는 변수명)):
     		or
     <button></button>
 </form>
+```
+
+```html
+<form action="/catch/" method="GET">
+      <label for="name">데이터 입력 : </label>
+      <input type="text" id='name' name="name">
+      <label for="iii">My-site : </label>
+      <input type="text" name="iii" id='iii'>
+      <input type="submit">
+  </form>
 ```
 
 
@@ -457,7 +478,7 @@ action="catch/"
 
 request.GET.get()
 
-
+: request 라는 장고 함수 선언할 때 넣어주었던 인자에 유저가 요청한 값이 들어 있음.
 
 
 

@@ -1,0 +1,9 @@
+{% extends 'base.html' %}          <# 템플릿 상속에서 필수!!! #>
+
+{% block content %}
+<form action="{% url 'articles:catch' %}">
+  <# <form action="{% url 'articels:catch' %}"> #>
+  <input type='text', name='name'>
+  <input type='submit', name='name'>
+</form>
+{% endlock %}
