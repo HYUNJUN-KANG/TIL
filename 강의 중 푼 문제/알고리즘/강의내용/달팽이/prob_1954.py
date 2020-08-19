@@ -49,6 +49,6 @@ for tc in range(1, T+1):
         x += dx[d]
         y += dy[d]
 
-    for row arr:
+    for row  in arr:
         print(row)
 

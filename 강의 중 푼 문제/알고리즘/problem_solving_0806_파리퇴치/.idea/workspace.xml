@@ -20,21 +20,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f5457a25-2846-4436-b9f6-9550eff4621b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../0806 수업 중 내용/baby-gin 부분집합으로 풀기.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../0806 수업 중 내용/solution/.idea/solution.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../0806 수업 중 내용/solution/색칠하기.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../0806 수업 중 내용/solution/선택정렬.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../0806 수업 중 내용/solution/특별한 정렬.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../0806 수업 중 내용/solution/파리퇴치.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../0806 수업 중 내용/부분집합 합.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../0806 수업 중 내용/이진탐색 solution.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/solution.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../problem_solving_0807/.idea/problem_solving_0807.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../problem_solving_0807/1974.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../0806 수업 중 내용/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../0806 수업 중 내용/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../0806 수업 중 내용/부분집합.py" beforeDir="false" afterPath="$PROJECT_DIR$/../0806 수업 중 내용/부분집합.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../달팽이/solution.py" beforeDir="false" afterPath="$PROJECT_DIR$/../달팽이/solution.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../백준/1106/1106_solution.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../강의내용 정리 md/00. Python intro.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../강의내용 정리 md/01. Data_Container 요약.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../강의내용 정리 md/02. Control flow.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../강의내용 정리 md/03 Function-1.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../강의내용 정리 md/04. Function-2.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../강의내용 정리 md/05. Error_Exception.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../강의내용 정리 md/06. Data_Structure.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../강의내용 정리 md/06_1. 데이터의 분류, list 복사, list comprehension.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../강의내용 정리 md/07. Data Structure 2.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../강의내용 정리 md/0729 정리.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../강의내용 정리 md/08. Module.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../강의내용 정리 md/09. OOP (Object Oriented Programming).md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../강의내용 정리 md/10. OOP2.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../강의내용 정리 md/11. OOP 3.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../강의내용 정리 md/enumerate().md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../알고리즘/달팽이/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../알고리즘/달팽이/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +51,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
   <component name="ProjectId" id="1fj7xfwsrDhThV8lvRgHjTJ9Aap" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
