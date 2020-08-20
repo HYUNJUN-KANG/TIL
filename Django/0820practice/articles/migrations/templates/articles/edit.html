@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>edit page</h1>
+<form action="{% url 'articles:update' pk=article.pk}" method="POST">
+  {% csrf_token %}
+  제목: <input type="text", name="title" value="{{ article.title }}"
+</form>
