@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 
 # Create your views here.
 from .models import Article
@@ -14,26 +14,45 @@ def index(request):
 def new(request):
     title = request.GET.get('title')
     content = request.GET.get('content')
-    article = Article(title=title, content=content)
-    article.save()
+    
+    Article.objects.create(title=title, content=content)
 
-    return render(request, 'articles/new.html')
+    return redirect('articles:index')
 
 
 def create(request):
-    title = reqeust.POST.get('title')
-    content = request.POST.get ('content')
-
-    article = Article.objects.create(title=title, content=content)
-
-    return redirect('articles:index')
+    return render(request, 'articles/create.html')
 
 
 def detail(request, pk):
     article = Article.objects.get(pk=pk)
 
     context = {
-        "article": article
+        "article": article,
     }
 
-    return render(request)
+    return render(request, 'articles/detail.html', context)
+
+def edit(request, pk):
+    article = Article.objects.get(pk=pk)
+    context = {
+        "article": article,
+    }
+    return render(request, 'articles/edit.html', context)
+
+def update(request, pk):
+    edit_data = Article.objects.get(pk=pk)
+
+    edit_data.title = request.POST.get('title')
+    edit_data.content = request.POST.get('content')
+
+    edit_data.save()
+
+    return redirect('articles:detail', edit_data.pk)
+
+
+def delete(request, pk):
+    del_data = Article.objects.get(pk=pk)
+    del_data.delete()
+
+    return redirect('articles:index')

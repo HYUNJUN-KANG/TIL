@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/SW/강의내용/Git/TIL" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/SW/강의내용/Git/django_0820/crud" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/SW/강의내용/Git/ssafy_4/EX_HW_WS" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/SW/강의내용/Git/ssafy_4/dont_touch_master/00_jango_intro" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/SW/강의내용/Git/ssafy_4/dont_touch_master/projects" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/SW/강의내용/Git/ssafy_4/dont_touch_master/web" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/SW/강의내용/Git/ssafy_4/projects/pjt01" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/SW/강의내용/Git/ssafy_4/projects/pjt02" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/SW/강의내용/Git/ssafy_4/projects/pjt03/pjt03" vcs="Git" />
+  </component>
+</project>

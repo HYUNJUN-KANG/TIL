@@ -1,0 +1,73 @@
+{% extends 'base.html' %}
+{% load gravatar %}
+{% block content %}
+<h1 class="text-center">{{ person.username }}님의 프로필</h1>
+<img src="{{ person.email|get_gravatar:30 }}" alt="gravatar">
+
+{% include 'accounts/_follow.html' %}
+
+<hr>
+
+<h2>{{ person.username }}가 쓴 글</h2>
+{% for article in person.article_set.all %}
+  <div>{{ article.title }}</div>
+{% endfor %}
+
+<hr>
+
+<h2>{{ person.username }}가 쓴 댓글</h2>
+{% for comment in person.comment_set.all %}
+  <div>{{ comment.content }}</div>
+{% endfor %}
+
+<hr>
+
+<h2>{{ person.username }}가 좋아요한 글</h2>
+{% for article in person.like_articles.all %}
+  <div>{{ article.title }}</div>
+{% endfor %}
+
+<hr>
+
+<a href="{% url 'articles:index' %}">back</a>
+{% endblock  %}
+
+{% block script %}
+  <script>
+    const followForm = document.querySelector('#follow-form')
+  
+    followForm.addEventListener('submit', function (event) {
+      event.preventDefault()
+      const csrftoken = document.querySelector('[name=csrfmiddlewaretoken]').value;
+      const headers = {
+        headers: {
+          'X-CSRFToken': csrftoken
+        },
+      }
+      axios.post("{% url 'accounts:follow' person.pk %}", {}, headers)
+      .then(function (res) {
+        //console.log(res.data)
+        const followed =res.data.followed
+        const follower_cnt = res.data.follower_cnt
+        const following_cnt = res.data.following_cnt
+
+        const followBtn = document.querySelector('#follow-form > button') //자식선택자 button 들고오는법
+        if (followed) {
+          followBtn.innerText = "Unfollow"
+          followBtn.classList.remove("btn-primary")
+          followBtn.classList.add("btn-secondary")
+        } else {
+          followBtn.innerText = "Follow"
+          followBtn.classList.remove("btn-secondary")
+          followBtn.classList.add("btn-primary")
+        }
+        const followCnt = document.querySelector('#follow-count')
+        followCnt.innerText = `팔로잉 :${following_cnt} / 팔로워 : ${follower_cnt}`
+      })
+      .catch(function (err) {
+        console.log(err)
+      })
+
+    })  
+  </script>
+{% endblock %}
